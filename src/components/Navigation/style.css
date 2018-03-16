@@ -1,0 +1,8 @@
+.navigation-list li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+.current {
+  font-weight: bold;
+}

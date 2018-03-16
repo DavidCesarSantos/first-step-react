@@ -1,34 +1,50 @@
-const pizzas = {
-  pizza1 : {
-    "id" : "2725673652",
-    "title" : "CHEESE & TOMATO",
-    "description" : "Base sauce tomate, mozzarella, tomates fraîches",
-    "price" : 1099,
-    "currency" : "€",
-    "image" : {
-      "url" : "https://kingersheim.papajohns.fr/binary_resources/10169165"
+const pizzas = [
+  {
+    id: "1",
+    title: "CHEESE & TOMATO",
+    description: "Base sauce tomate, mozzarella, tomates fraîches",
+    price: 1099,
+    currency: "€",
+    image: {
+      url: "https://www.saffapizza.fr/s/cc_images/cache_777914.png?t=1483258572"
     }
   },
-  pizza2 : {
-    "id" : "387467836478364",
-    "title" : "FETA & MIEL - LARDONS",
-    "description" : "Base crème fraîche légère, mozzarella, lardons fumés, fromage feta, oignons rouges, miel doux",
-    "price" : 1199,
-    "currency" : "€",
-    "image" : {
-      "url" : "https://kingersheim.papajohns.fr/binary_resources/10277495"
+  {
+    id: "2",
+    title: "FETA & MIEL - LARDONS",
+    description:
+      "Base crème fraîche, mozzarella, lardons fumés, feta, miel doux",
+    price: 1199,
+    currency: "€",
+    image: {
+      url:
+        "http://thumb.nespi.1mag.kz/A6SzcsAbTHfti_2Jc1p1f1gWO78=/250x0/smart/http://nespi.kz/media/places/photos/c6/7f/a6/12/c67fa61255d756a710cd3a7218529708.jpg"
     }
   },
-  pizza3 : {
-    id:'89744689',
-    "title" : "SPICY TUNA",
-    "description" : "Base sauce tomate, mozzarella, thon, champignons, oignons, olives vertes, spirale de sauce Aji verte Salsa",
-    "price" : 1250,
-    "currency" : "€",
-    "image" : {
-      "url" : "https://kingersheim.papajohns.fr/binary_resources/10279450"
+  {
+    id: "3",
+    title: "SPICY TUNA",
+    description:
+      "Base sauce tomate, mozzarella, thon, champignons, oignons, olives vertes, spirale de sauce Aji verte Salsa",
+    price: 1250.6,
+    currency: "€",
+    image: {
+      url:
+        "http://www.pizzaexpres.eu/wp-content/uploads/2017/06/503818102.jpg.jpg"
+    }
+  },
+  {
+    id: "4",
+    title: "SPICY Porc",
+    description:
+      "Base sauce tomate, mozzarella, porc, champignons, oignons, olives vertes, spirale de sauce Aji verte Salsa",
+    price: 1250,
+    currency: "€",
+    image: {
+      url:
+        "http://www.pizzaexpres.eu/wp-content/uploads/2017/06/503818102.jpg.jpg"
     }
   }
-}
+];
 
 export default pizzas;

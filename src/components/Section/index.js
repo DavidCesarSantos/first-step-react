@@ -4,3 +4,15 @@
 // Ce composant doit retourner un tag html section avec un id qui doit contenir une props styleID
 // Dans ce tag section il doit y avoir un <h2 className="titleSection"></h2> puis {this.props.children}
 // Le tag H2 doit avoir comme innerHTML un props sectionTitle
+import React, { Component } from "react";
+
+export default class Section extends Component {
+  render() {
+    return (
+      <section id={this.props.id}>
+        <h2 className="titleSection">{this.props.sectionTitle}</h2>
+        {this.props.children}
+      </section>
+    );
+  }
+}
