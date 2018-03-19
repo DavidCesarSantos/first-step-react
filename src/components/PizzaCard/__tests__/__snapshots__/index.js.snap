@@ -5,7 +5,7 @@ exports[`renders renders with addOrder 1`] = `
   className="MuiPaper-root-1 MuiPaper-elevation2-5 MuiPaper-rounded-2"
 >
   <div
-    className="MuiCardMedia-root-28 pizza-card-media"
+    className="MuiCardMedia-root-28 css-b5ywrm"
     src={undefined}
     style={
       Object {

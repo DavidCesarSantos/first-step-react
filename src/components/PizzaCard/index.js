@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Button from "material-ui/Button";
-import Card, { CardActions, CardContent, CardMedia } from "material-ui/Card";
+import Card, { CardActions, CardContent } from "material-ui/Card";
 import Typography from "material-ui/Typography";
 import { func } from "prop-types";
 
 import Price from "../Price";
 import { pizza } from "./types";
 
-import "./styles.css";
+import { PizzaCardMedia } from "./styles";
 
 export default class Product extends Component {
   static propTypes = {
@@ -29,11 +29,7 @@ export default class Product extends Component {
     const { title, description, price, currency, image } = this.props.details;
     return (
       <Card>
-        <CardMedia
-          image={image.url}
-          title={title}
-          className="pizza-card-media"
-        />
+        <PizzaCardMedia image={image.url} title={title} />
         <CardContent>
           <Typography variant="headline" component="h4">
             {title}
