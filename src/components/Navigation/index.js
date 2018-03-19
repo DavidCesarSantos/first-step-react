@@ -19,7 +19,7 @@ export default () => {
         </li>
       </ul>
 
-      <LinearProgress mode="indeterminate" />
+      {/* <LinearProgress mode="indeterminate" /> */}
     </nav>
   );
 };

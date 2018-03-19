@@ -1,4 +1,5 @@
 import axios from "axios";
+import { object, func } from "prop-types";
 import React from "react";
 import { remove } from "ramda";
 
@@ -9,28 +10,35 @@ import pizzas from "../../samplePizzas";
 import Section from "../Section";
 
 export default class HomePage extends React.Component {
+  static PropsTypes = {
+    pizzas: object,
+    dispatch: func
+  };
+
   constructor(props) {
     super(props);
     this.state = {
-      pizzas: [],
       order: []
     };
   }
+
   componentDidMount() {
-    axios
-      .get("https://pizza-rapid-store.surge.sh/api/pizzas.json")
-      .then(this.initPizza)
-      .catch(error => {
-        console.log(error);
-      });
+    // axios
+    //   .get("https://pizza-rapid-store.surge.sh/api/pizzas.json")
+    //   .then(this.initPizza)
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
+    this.props.loadPizzas("");
   }
 
-  initPizza = response => {
-    const pizzas = response.data;
-    this.setState({
-      pizzas
-    });
-  };
+  // initPizza = response => {
+  //   const pizzas = response.data;
+  //   this.setState({
+  //     pizzas
+  //   });
+  // };
+
   addOrder = pizzaId => {
     this.setState(previousState => ({
       order: [...previousState.order, pizzaId]
@@ -51,12 +59,12 @@ export default class HomePage extends React.Component {
     return (
       <Page>
         <Section id="list" sectionTitle="♨️ Choose your pizza">
-          <PizzaList pizzas={this.state.pizzas} addOrder={this.addOrder} />
+          <PizzaList pizzas={this.props.pizzas} addOrder={this.addOrder} />
         </Section>
         <Section id="cart" sectionTitle="💵 Order your pizza">
           <Basket
             orderList={this.state.order}
-            pizzas={this.state.pizzas}
+            pizzas={this.props.pizzas}
             removeFormOrder={this.removeFormOrder}
           />
         </Section>

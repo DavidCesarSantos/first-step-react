@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders renders with addOrder 1`] = `
+<div
+  className="MuiPaper-root-1 MuiPaper-elevation2-5 MuiPaper-rounded-2"
+>
+  <div
+    className="MuiCardMedia-root-28 pizza-card-media"
+    src={undefined}
+    style={
+      Object {
+        "backgroundImage": "url(http://thumb.nespi.1mag.kz/A6SzcsAbTHfti_2Jc1p1f1gWO78=/250x0/smart/http://nespi.kz/media/places/photos/c6/7f/a6/12/c67fa61255d756a710cd3a7218529708.jpg)",
+      }
+    }
+    title="FETA & MIEL - LARDONS"
+  />
+  <div
+    className="MuiCardContent-root-30"
+  >
+    <h4
+      className="MuiTypography-root-31 MuiTypography-headline-36"
+    >
+      FETA & MIEL - LARDONS
+    </h4>
+    <p
+      className="MuiTypography-root-31 MuiTypography-body1-40"
+    >
+      Base crème fraîche, mozzarella, lardons fumés, feta, miel doux
+    </p>
+    <p
+      className="MuiTypography-root-31 MuiTypography-body1-40"
+    >
+      11.99
+      €
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root-55"
+  >
+    <button
+      className="MuiButtonBase-root-72 MuiButton-root-57 MuiButton-flatPrimary-59 MuiButton-sizeSmall-69 MuiCardActions-action-56"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label-58"
+      >
+        Ajouter
+      </span>
+      <span
+        className="MuiTouchRipple-root-75"
+      />
+    </button>
+  </div>
+</div>
+`;
